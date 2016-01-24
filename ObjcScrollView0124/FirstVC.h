@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FirstVC.h
 //  ObjcScrollView0124
 //
 //  Created by 劉坤昶 on 2016/1/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FirstVC : UIViewController
 
 @end
-

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstVC.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,17 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+
+    FirstVC * onePage = [FirstVC new];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = onePage;
+    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 
